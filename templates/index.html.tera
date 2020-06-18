@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="EscA">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="/design/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/design/images/favicon.ico" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/design/css/index.css">
+        <title>dshs cafeteria info</title>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="title">
+                    <h1>{{ data }}</h1>
+                </div>
+            </div>
+        </header>
+        <div class="center">
+            <p>업데이트 내역은 <a href="https://github.com/EscA-phera/dshs_cafeteria_issue_tracker/issues/5">여기를</a>, 문제가 있으시면 <a href="https://github.com/EscA-phera/dshs_cafeteria_issue_tracker/issues/1">여기를</a>, 질문이나 건의사항은 <a href="https://github.com/EscA-phera/dshs_cafeteria_issue_tracker/issues/4">여기를</a> 이용하여 주세요!</p>
+        </div>
+        <div class="content">
+            <div class="number">
+                <h1>인원 수 통계</h1>
+                <canvas class="numchart" style="height: 90vh; width: 60vw;"></canvas>
+                <canvas class="barchart" style="height: 30vh; width: 60vw;"></canvas>
+            </div>
+            <div class="menu">
+                <h1>오늘의 식단표</h1>
+            </div>
+        </div>
+        <footer>
+            <p>Fonts 'Do Hyeon' & 'Teko' by <a href="https://fonts.google.com/">Google Fonts</a> are licensed by SIL Open Font License 1.1,</p>
+            <p>Font 'Uni Sans' made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> is licensed by CC BY 3.0.</p>
+            <p>APIs Powered by <a href="https://github.com/5d-jh/school-menu-api">school-menu-api</a> & <a href="https://www.chartjs.org/">chart.js</a> are licensed by MIT License. ⓒ 2020. <a href="https://github.com/EscA-phera/dshs_cafeteria_issue_tracker">EscA</a>.</p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="/design/js/getdata.js"></script>
+    <script type="text/javascript" src="/design/js/numberdata.js"></script>
+    <script type="text/javascript" src="/design/js/reactive.js"></script>
+</html>

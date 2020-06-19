@@ -52,7 +52,7 @@ pub struct NuguApiData {
     context: NuguApiDataContext
 }
 
-#[get("/health")]
+#[get("/api/v1/nugu/health")]
 pub fn get_test() -> ApiResponse {
     ApiResponse {
         json: json! ({

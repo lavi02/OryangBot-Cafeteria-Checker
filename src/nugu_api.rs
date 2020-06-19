@@ -31,11 +31,6 @@ pub struct NuguApiDataAction {
     actionName: String
 }
 
-#[derive(Serialize, Deserialize)]
-pub struct NuguApiDataType {
-    r#type: String
-}
-
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NuguApiDataDevice {
     r#type: String
